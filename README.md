@@ -4,7 +4,7 @@ A comprehensive dental practice management system built with React and modern we
 
 ## 🚀 Live Demo
 
-**[View Live Application](https://incredible-crostata-831818.netlify.app/dashboard)**
+**[View Live Application](https://entntassesment.netlify.app/dashboard)**
 
 ## 📋 Demo Credentials
 
