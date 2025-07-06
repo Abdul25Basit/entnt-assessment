@@ -4,7 +4,7 @@ A comprehensive dental practice management system built with React and modern we
 
 ## 🚀 Live Demo
 
-**[View Live Application](https://entntassesment.netlify.app)**
+**[View Live Application](https://entntassesment.netlify.app/login)**
 
 ## 📋 Demo Credentials
 
