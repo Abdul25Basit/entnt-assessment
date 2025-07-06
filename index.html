@@ -4,11 +4,86 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dental Center Management | ENTNT</title>
-    <meta name="description" content="Professional dental center management system for appointments, patients, and treatments" />
+    <title>MediCare Pro | Dental Practice Management System</title>
+    <meta name="description" content="Advanced dental practice management system for modern healthcare professionals. Manage patients, appointments, and treatments efficiently." />
+    <meta name="keywords" content="dental management, healthcare software, patient management, appointment scheduling" />
+    <meta name="author" content="Your Name - Healthcare Technology Solutions" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="MediCare Pro - Dental Practice Management" />
+    <meta property="og:description" content="Professional dental center management system for appointments, patients, and treatments" />
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:title" content="MediCare Pro - Dental Practice Management" />
+    <meta property="twitter:description" content="Professional dental center management system for appointments, patients, and treatments" />
+    
+    <!-- Favicon alternatives -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Custom CSS variables -->
+    <style>
+      :root {
+        --primary-color: #2563eb;
+        --secondary-color: #7c3aed;
+        --accent-color: #06b6d4;
+        --success-color: #10b981;
+        --warning-color: #f59e0b;
+        --error-color: #ef4444;
+      }
+      
+      /* Custom loading animation */
+      .loading-spinner {
+        border: 3px solid #f3f4f6;
+        border-top: 3px solid var(--primary-color);
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        animation: spin 1s linear infinite;
+      }
+      
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+      
+      /* Custom scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      
+      ::-webkit-scrollbar-track {
+        background: #f1f5f9;
+      }
+      
+      ::-webkit-scrollbar-thumb {
+        background: #cbd5e1;
+        border-radius: 4px;
+      }
+      
+      ::-webkit-scrollbar-thumb:hover {
+        background: #94a3b8;
+      }
+    </style>
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <!-- Fallback loading screen -->
+      <div style="display: flex; align-items: center; justify-content: center; min-height: 100vh; background: linear-gradient(135deg, #f0f9ff 0%, #e0e7ff 100%);">
+        <div style="text-align: center;">
+          <div class="loading-spinner" style="margin: 0 auto 20px;"></div>
+          <h2 style="color: #1e293b; font-family: system-ui, sans-serif; margin: 0 0 10px;">Loading MediCare Pro</h2>
+          <p style="color: #64748b; font-family: system-ui, sans-serif; margin: 0;">Initializing your dental practice dashboard...</p>
+        </div>
+      </div>
+    </div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
