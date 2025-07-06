@@ -1,70 +1,177 @@
-# Getting Started with Create React App
+# Dental Center Management System
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A comprehensive dental practice management system built with React and modern web technologies for ENTNT Technical Assignment.
 
-## Available Scripts
+## 🚀 Live Demo
 
-In the project directory, you can run:
+**[View Live Application](https://your-deployed-app-url.netlify.app)**
 
-### `npm start`
+## 📋 Demo Credentials
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Admin Access
+- **Email**: `admin@entnt.in`
+- **Password**: `admin123`
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Patient Access
+- **Email**: `john@entnt.in`
+- **Password**: `patient123`
 
-### `npm test`
+## ✨ Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 🏥 Admin Dashboard
+- **Practice Overview**: Real-time metrics and key performance indicators
+- **Patient Management**: Complete patient record system with search and filtering
+- **Appointment Scheduling**: Interactive calendar with drag-and-drop functionality
+- **Treatment Tracking**: Comprehensive treatment history and documentation
+- **Revenue Analytics**: Financial insights and reporting
 
-### `npm run build`
+### 👤 Patient Portal
+- **Personal Dashboard**: Personalized health overview
+- **Appointment Management**: View and track upcoming appointments
+- **Treatment History**: Access to complete medical records
+- **Profile Management**: Update personal information and preferences
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 🎨 Design Features
+- **Responsive Design**: Optimized for desktop, tablet, and mobile devices
+- **Modern UI/UX**: Clean, intuitive interface with smooth animations
+- **Accessibility**: WCAG compliant with keyboard navigation support
+- **Dark Mode Ready**: Prepared for theme switching capabilities
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🛠️ Tech Stack
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **Frontend Framework**: React 18 with Hooks
+- **Build Tool**: Vite (Lightning-fast development)
+- **Styling**: Tailwind CSS with custom design system
+- **Icons**: Lucide React (Beautiful, customizable icons)
+- **Routing**: React Router DOM v6
+- **State Management**: React Context API with useReducer
+- **Data Persistence**: Local Storage (Production-ready for backend integration)
+- **Type Safety**: JSDoc comments for better development experience
 
-### `npm run eject`
+## 🚀 Getting Started
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Prerequisites
+- Node.js 16+ and npm/yarn
+- Modern web browser
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Installation
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/yourusername/dental-management-system.git
+   cd dental-management-system
+   ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
 
-## Learn More
+3. **Start development server**
+   ```bash
+   npm run dev
+   ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+4. **Open your browser**
+   Navigate to `http://localhost:5173`
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Build for Production
 
-### Code Splitting
+```bash
+npm run build
+npm run preview  # Preview production build locally
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 📁 Project Structure
 
-### Analyzing the Bundle Size
+```
+src/
+├── components/
+│   ├── Auth/              # Authentication components
+│   ├── Dashboard/         # Admin & Patient dashboards
+│   ├── Layout/           # Navigation, header, sidebar
+│   ├── Patients/         # Patient management
+│   ├── Appointments/     # Appointment system
+│   ├── Calendar/         # Calendar views
+│   └── UI/              # Reusable UI components
+├── contexts/             # React Context providers
+│   ├── AuthContext.jsx  # Authentication state
+│   └── DataContext.jsx  # Application data management
+├── utils/               # Utility functions
+│   └── localStorage.js  # Data persistence layer
+└── types/              # Type definitions and schemas
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 🔧 Key Implementation Details
 
-### Making a Progressive Web App
+### State Management
+- **Context API**: Centralized state management for authentication and data
+- **Local Storage**: Persistent data storage with automatic initialization
+- **Optimistic Updates**: Immediate UI feedback with data synchronization
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Security Features
+- **Role-based Access Control**: Separate admin and patient interfaces
+- **Protected Routes**: Authentication-required page access
+- **Input Validation**: Form validation and sanitization
 
-### Advanced Configuration
+### Performance Optimizations
+- **Code Splitting**: Lazy loading for optimal bundle size
+- **Memoization**: React.memo and useMemo for expensive operations
+- **Efficient Rendering**: Optimized re-renders with proper dependency arrays
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 🎯 Business Logic
 
-### Deployment
+### Patient Management
+- Complete CRUD operations for patient records
+- Advanced search and filtering capabilities
+- Health information tracking and emergency contacts
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### Appointment System
+- Multi-status appointment workflow (Scheduled → In Progress → Completed)
+- Calendar integration with multiple view modes
+- Automated scheduling conflict detection
 
-### `npm run build` fails to minify
+### Treatment Documentation
+- Comprehensive treatment history
+- File attachment support with base64 encoding
+- Cost tracking and revenue analytics
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 🔮 Future Enhancements
+
+- **Backend Integration**: REST API with database persistence
+- **Real-time Updates**: WebSocket integration for live updates
+- **Advanced Analytics**: Detailed reporting and insights
+- **Mobile App**: React Native companion application
+- **Payment Integration**: Stripe/PayPal payment processing
+- **Notification System**: Email/SMS appointment reminders
+
+## 📱 Browser Support
+
+- Chrome 90+
+- Firefox 88+
+- Safari 14+
+- Edge 90+
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit changes (`git commit -m 'Add amazing feature'`)
+4. Push to branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+
+## 🙏 Acknowledgments
+
+- **ENTNT**: For providing the technical assignment opportunity
+- **React Team**: For the amazing framework
+- **Tailwind CSS**: For the utility-first CSS framework
+- **Lucide**: For the beautiful icon library
+
+---
+
+**Built with ❤️ for ENTNT Technical Assignment**
